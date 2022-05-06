@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  console.log("Hello react.")
+
+  const x = "Hello from the function"
+
+  const person = {
+    name: "Ernesto",
+    age: 29,
+    hobby: "coding"
+  }
+
+  const toDoList = [
+    "Learn React",
+    "Climb Mt. Everest",
+    "Run a marathon",
+    "Feed the dogs"
+  ]
+
+  // document.getElementById()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello Dojo!</h1>
+      <h2>Things I need to do:</h2>
+      <div>
+        {
+          toDoList.map((item, idx) => {
+            return (
+              <div key={idx}>
+              <li> {item} </li>
+              </div>
+            )
+          })
+        }
+      </div>
     </div>
   );
 }
