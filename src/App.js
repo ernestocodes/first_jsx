@@ -6,7 +6,7 @@ import PersonCard2 from './components/PersonCard2'
 function App() {
   console.log("Hello react.")
 
-  const x = "Hello from the function"
+  // const x = "Hello from the function"
 
   const toDoList = [
     "Learn React",
@@ -35,9 +35,11 @@ function App() {
         }
       </div>
       <PersonCardObj person={person1}/>
+
       <PersonCard firstName="John" lastName="Smith" age = {88} hairColor = "Brown"/>
       <PersonCard firstName="Millard" lastName="Fillmore" age = {50} hairColor = "Brown"/>
       <PersonCard firstName="Maria" lastName="Smith" age = {62} hairColor = "Brown"/>
+
       <PersonCard2 firstName="John" lastName="Smith" age = {88} hairColor = "Brown"/>
       <PersonCard2 firstName="Millard" lastName="Fillmore" age = {50} hairColor = "Brown"/>
       <PersonCard2 firstName="Maria" lastName="Smith" age = {62} hairColor = "Brown"/>
